@@ -1,0 +1,10 @@
+// Import your custom SCSS variables
+// (Can contain custom variables, theme variable overrides, and Bootstrap core variable overrides)
+@import 'custom-variables.scss';
+
+// Import the theme's core SCSS
+@import 'theme/corporate.scss';
+
+// Import your custom components/styles
+// (This file could import separate files or be a single SCSS file)
+@import 'custom.scss';
