@@ -1,3 +1,5 @@
-//import import "script-loader!fullcalendar/main.js";
+// import 'script-loader!fullcalendar/main.js';
 
-import 'fullcalendar';
+import('raw-loader!fullcalendar/main.js').then((rawModule) =>
+	eval.call(null, rawModule.default)
+);
