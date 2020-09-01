@@ -7,7 +7,7 @@
 
 				<ul class="sidebar-nav">
 					<li class="sidebar-header">
-						Pages
+						What you can do
 					</li>
 					<li class="sidebar-item">
 						<a href="#dashboards" data-toggle="collapse" class="sidebar-link collapsed">
@@ -26,28 +26,28 @@
 						<a href="#pages" data-toggle="collapse" class="sidebar-link">
               <i class="align-middle" data-feather="layout"></i> <span class="align-middle">Pages</span>
             </a>
-						<ul id="pages" class="sidebar-dropdown list-unstyled collapse show" data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-profile.html">Profile</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">Settings</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-clients.html">Clients</a></li>
+						<ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
+							<li class="sidebar-item"><%= link_to 'Profile', pages_profile_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Settings', pages_settings_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Clients', pages_clients_path, class:"sidebar-link" %></li>
 							<li class="sidebar-item">
 								<a href="#projects" data-toggle="collapse" class="sidebar-link collapsed">
                   Projects
                 </a>
 								<ul id="projects" class="sidebar-dropdown list-unstyled collapse">
 									<li class="sidebar-item">
-										<a class="sidebar-link" href="pages-projects-list.html">List</a>
+										<%= link_to 'List', pages_projects_list_path, class:"sidebar-link" %>
 									</li>
 									<li class="sidebar-item">
-										<a class="sidebar-link" href="pages-projects-detail.html">Detail <span class="sidebar-badge badge badge-primary">New</span></a>
+										<%= link_to pages_projects_details_path, class:"sidebar-link" do %>Details <span class="sidebar-badge badge badge-primary">New</span><% end %>
 									</li>
 								</ul>
 							</li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-invoice.html">Invoice</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-pricing.html">Pricing</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-tasks.html">Tasks</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-chat.html">Chat <span class="sidebar-badge badge badge-primary">New</span></a></li>
-							<li class="sidebar-item active"><a class="sidebar-link" href="pages-blank.html">Blank Page</a></li>
+							<li class="sidebar-item"><%= link_to 'Invoice', pages_invoice_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Pricing', pages_pricing_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Tasks', pages_tasks_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to pages_chat_path, class:"sidebar-link" do %>Chat <span class="sidebar-badge badge badge-primary">New</span><% end %></li>
+							<li class="sidebar-item"><%= link_to 'Blank', pages_blank_path, class:"sidebar-link" %></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
@@ -56,11 +56,11 @@
               <span class="sidebar-badge badge badge-secondary">Special</span>
             </a>
 						<ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-sign-in.html">Sign In</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-sign-up.html">Sign Up</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-reset-password.html">Reset Password</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-404.html">404 Page</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-500.html">500 Page</a></li>
+							<li class="sidebar-item"><%= link_to 'Sign in', auth_signin_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Sign up', auth_signup_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Reset password', auth_reset_password_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to '404 page', auth_404_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to '500 page', auth_500_path, class:"sidebar-link" %></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
@@ -68,12 +68,12 @@
               <i class="align-middle" data-feather="monitor"></i> <span class="align-middle">Layouts</span>
             </a>
 						<ul id="layouts" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="layouts-sidebar-sticky.html">Sticky Sidebar</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="layouts-sidebar-collapsed.html">Collapsed Sidebar</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="layouts-boxed.html">Boxed Layout</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-analytics.html?theme=classic">Classic Theme</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-analytics.html?theme=corporate">Corporate Theme <span class="sidebar-badge badge badge-primary">New</span></a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-analytics.html?theme=modern">Modern Theme <span class="sidebar-badge badge badge-primary">New</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Sticky Sidebar</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Collapsed Sidebar</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Boxed Layout</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Classic Theme</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Corporate Theme <span class="sidebar-badge badge badge-primary">New</span></a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Modern Theme <span class="sidebar-badge badge badge-primary">New</span></a></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
@@ -81,10 +81,10 @@
               <i class="align-middle" data-feather="book-open"></i> <span class="align-middle">Documentation</span>
             </a>
 						<ul id="documentation" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="docs-introduction.html">Introduction</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="docs-installation.html">Getting Started</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="docs-plugins.html">Plugins</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="docs-changelog.html">Changelog</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Introduction</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Getting Started</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Plugins</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Changelog</a></li>
 						</ul>
 					</li>
 
@@ -96,16 +96,16 @@
               <i class="align-middle" data-feather="grid"></i> <span class="align-middle">UI Elements</span>
             </a>
 						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-alerts.html">Alerts</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-buttons.html">Buttons</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-carousel.html">Carousel</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-embed-video.html">Embed Video</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-general.html">General <span class="sidebar-badge badge badge-info">10+</span></a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-tabs.html">Tabs</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>
+							<li class="sidebar-item"><%= link_to 'Alerts', ui_alerts_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Buttons', ui_buttons_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Cards', ui_cards_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Carousel', ui_carousel_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Embed Video', ui_embed_video_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to ui_general_path, class:"sidebar-link" do %>General <span class="sidebar-badge badge badge-info">10+</span><% end %></li>
+							<li class="sidebar-item"><%= link_to 'Grid', ui_grid_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Modals', ui_modals_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Tabs', ui_tabs_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Typography', ui_typography_path, class:"sidebar-link" %></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
@@ -114,8 +114,8 @@
               <span class="sidebar-badge badge badge-info">1500+</span>
             </a>
 						<ul id="icons" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="icons-feather.html">Feather</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="icons-font-awesome.html">Font Awesome</a></li>
+							<li class="sidebar-item"><%= link_to 'Feather', icons_feather_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Font Awesome', icons_fontawesome_path, class:"sidebar-link" %></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
@@ -123,29 +123,29 @@
               <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Forms</span>
             </a>
 						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Layouts</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-input-groups.html">Input Groups</a></li>
+							<li class="sidebar-item"><%= link_to 'Layouts', forms_layouts_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Basic Inputs', forms_basic_inputs_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Input Groups', forms_input_groups_path, class:"sidebar-link" %></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="tables-bootstrap.html">
+						<%= link_to tables_bootstrap_path, class:"sidebar-link" do %>
               <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>
-            </a>
+            <% end %>
 					</li>
 
 					<li class="sidebar-header">
-						Plugin & Addons
+						Plugins & Addons
 					</li>
 					<li class="sidebar-item">
 						<a href="#form-plugins" data-toggle="collapse" class="sidebar-link collapsed">
               <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Form Plugins</span>
             </a>
 						<ul id="form-plugins" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-advanced-inputs.html">Advanced Inputs</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-editors.html">Editors</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-validation.html">Validation</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-wizard.html">Wizard</a></li>
+							<li class="sidebar-item"><%= link_to 'Advanced Inputs', form_plugins_advanced_inputs_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Editors', form_plugins_editors_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Validation', form_plugins_validation_path, class:"sidebar-link" %></li>
+							<li class="sidebar-item"><%= link_to 'Wizard', form_plugins_wizard_path, class:"sidebar-link" %></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
@@ -167,7 +167,7 @@
               <span class="sidebar-badge badge badge-primary">New</span>
             </a>
 						<ul id="charts" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="charts-chartjs.html">Chart.js</a></li>
+							<li class="sidebar-item"><%= link_to "Chart.js", charts_chartjs_path, class:"sidebar-link" %></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="charts-apexcharts.html">ApexCharts <span class="sidebar-badge badge badge-primary">New</span></a></li>
 						</ul>
 					</li>
@@ -233,6 +233,7 @@
 
 				<div class="sidebar-bottom d-none d-lg-block">
 					<div class="media">
+						<%= image_tag "avatars/Q_avatar.png", class:"rounded-circle mr-3", alt:"John Q", width:"40", height:"40" %>
 						<div class="media-body">
 							<h5 class="mb-1">John Q</h5>
 							<div>

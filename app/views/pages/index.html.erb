@@ -1,1 +1,22 @@
 <h1>Hello from AppStack Theme</h1>
+
+<input id='myInput' value="420">
+<script>
+console.log($('#myInput').val() );
+</script>
+
+<table id="myTable" class="table table-striped" style="width:100%">
+<thead>
+	<tr><th>Col 1</th><th>Col 2</th></tr>
+</thead>
+<tbody>
+	<tr><td>Kevin</td><td>101</td></tr>
+	<tr><td>Sue</td><td>202</td></tr>
+</tbody>
+</table>
+
+<script>
+$('#myTable').DataTable( {
+    responsive: true
+} );
+</script>

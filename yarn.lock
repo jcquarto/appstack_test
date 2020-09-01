@@ -2500,6 +2500,14 @@ datatables.net-buttons@1.6.2:
     datatables.net "^1.10.15"
     jquery ">=1.7"
 
+datatables.net-dt@^1.10.21:
+  version "1.10.21"
+  resolved "https://registry.yarnpkg.com/datatables.net-dt/-/datatables.net-dt-1.10.21.tgz#2a3bb65bbb39362a36e75b989da7d08bc1fb4313"
+  integrity sha512-P89PgkhVCB6shP0CbigmB1Z812yfdfhvAbUdg08mLuF7tuvLFPQC9F+WIV30Hj9mgMsPALWAEJEYAA3aJjuqIA==
+  dependencies:
+    datatables.net "1.10.21"
+    jquery ">=1.7"
+
 datatables.net-responsive-bs4@2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/datatables.net-responsive-bs4/-/datatables.net-responsive-bs4-2.2.5.tgz#c81e6c24b80237ee326454a40b08345563361ebb"
@@ -3077,7 +3085,7 @@ faye-websocket@~0.11.1:
   dependencies:
     websocket-driver ">=0.5.1"
 
-feather-icons@4.28.0:
+feather-icons@^4.28.0:
   version "4.28.0"
   resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.28.0.tgz#e1892a401fe12c4559291770ff6e68b0168e760f"
   integrity sha512-gRdqKESXRBUZn6Nl0VBq2wPHKRJgZz7yblrrc2lYsS6odkNFDnA4bqvrlEVRUPjE1tFax+0TdbJKZ31ziJuzjg==
@@ -6749,10 +6757,10 @@ simplebar@5.2.1:
     lodash.throttle "^4.1.1"
     resize-observer-polyfill "^1.5.1"
 
-smartwizard@4.4.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/smartwizard/-/smartwizard-4.4.1.tgz#4107314c3167c82db86fae77daeca05c84d72c3f"
-  integrity sha512-tSvrRi+QA3Tha26wwhLUZF/rgyyebzg9nndlG45i66JeI+q0CmpP97W9X6+re6tApB9YSPH3wREf40gt06xPqQ==
+smartwizard@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/smartwizard/-/smartwizard-5.1.1.tgz#16313081f66a7b6a1ed6d7b2787a4960967d22c0"
+  integrity sha512-AFeP/zDXOEE4/AsHTsWIHQC/HyJlavOus7EtCs2nwsh1MkRDNtRFFadOLXCw7BlgT9xExQwmSIqxZdXKHuyFrw==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
